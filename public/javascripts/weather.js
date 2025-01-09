@@ -6,9 +6,9 @@ let updateBackground = (weatherDesc) => {
 
     if (weatherDesc.toLowerCase().includes('sunny')) {
         body.style.backgroundImage = 'url("/images/sunny.jpg")';
-    } else if (weatherDesc.toLowerCase().includes('cloudy')) {
+    } else if (weatherDesc.toLowerCase().includes('cloud')) {
         body.style.backgroundImage = 'url("/images/cloudy.jpg")';
-    } else if (weatherDesc.toLowerCase().includes('rainy')) {
+    } else if (weatherDesc.toLowerCase().includes('rain')) {
         body.style.backgroundImage = 'url("/images/rainy.jpg")';
     } else {
         body.style.backgroundImage = '';
@@ -18,7 +18,6 @@ let updateBackground = (weatherDesc) => {
 searchBtn.addEventListener('click', () => {
     const location = document.querySelector('#locationInput').value.trim();
     const alertBox = document.querySelector('#alertBox');
-    console.log(location);
 
     if (!location) {
         alertBox.textContent = 'Please enter a location.';

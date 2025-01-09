@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 exports.searchWeather = (req, res, next) => {
     const city = req.query.location;
     console.log(city);
