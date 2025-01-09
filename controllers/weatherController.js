@@ -18,7 +18,6 @@ exports.searchWeather = (req, res, next) => {
         }
     })
         .then(data => {
-            console.log(data);
             return res.json({
                 msg: "success",
                 location: data.data.location.name,
@@ -30,7 +29,6 @@ exports.searchWeather = (req, res, next) => {
             });
         })
         .catch(error => {
-            console.log(error);
             return res.json({ msg: "failed", error: "Invalid location. Please try other location." });
         });
 }
