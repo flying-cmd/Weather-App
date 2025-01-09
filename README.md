@@ -11,7 +11,8 @@ npm intall
 ```
 
 Step 3: Replace Weatherstack API key (optional)
-If you want to use your own Weatherstack API key, please use your key in the weatherRouter.js file.
+
+If you want to use your own Weatherstack API key, please replace my key in the URL of the axios request part in ```controllers/weatherController.js``` with your key. You can refer to https://weatherstack.com/documentation#query_parameter
 
 Step 4: Start the server
 ```bash

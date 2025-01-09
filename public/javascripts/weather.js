@@ -12,7 +12,6 @@ let updateBackground = (weatherDesc) => {
         body.style.backgroundImage = 'url("/images/rainy.jpg")';
     } else {
         body.style.backgroundImage = '';
-        // body.style.background = 'white';
     }
 };
 
@@ -35,8 +34,6 @@ searchBtn.addEventListener('click', () => {
         }
     })
     .then(data => {
-        // document.querySelector('#city').textContent = data.location;
-        console.log(data);
         // failed get data from backend
         if (data.data.msg === 'failed') {
             alertBox.textContent = 'Invalid location. Please try other location.';
