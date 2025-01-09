@@ -7,7 +7,7 @@ cd Weather-App
 
 Step 2: Install Dependencies
 ```bash
-npm intall
+npm install
 ```
 
 Step 3: Replace Weatherstack API key (optional)
